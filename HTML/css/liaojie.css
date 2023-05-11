@@ -6,10 +6,15 @@
     user-select: none;
 }
 
+ul{
+    list-style: none;
+    display: inline-block;
+}
 .top1{
     display: flex;
     background-color: black;
     align-items: center;
+    justify-content: space-between;
 }
 .top1 a{
     color: #fff;
@@ -24,9 +29,8 @@
     height: 70px;
     padding: 10px 0px 10px 20px;
 }
-ul{
+.top1 ul{
     display: block;
-    left: 47%;
     position: relative;
     list-style: none;
     display: flex;
@@ -43,7 +47,94 @@ ul{
     height: 100%;
 }
 .middle{
-    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    background: #18181a;
+        
+}
+.banner{
+    height: 801px;
+    min-width: 100%;
+    object-fit: fill;
+    
+}
+.tiao{
+    height: 200px;
+    width: 700px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:20px;
+    z-index: 0;
+    background-color:#121111; 
+    opacity:0.9;
+}
+.tiao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#fff;
+    text-align: center;
+}
+.tiao img{
+    display: block;
     height: 100px;
-    width: 80px;
+}
+.xiao{
+    color:#fff;
+}
+.Bottom_A{
+    min-height: 100px;
+    background-color: #000;
+}
+
+
+.Bottom_A>div{ 
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 400px;
+    
+}
+.Bottom_A>div::after{
+    content: "";
+    display: block;
+}
+
+
+.ul_b{
+    margin: 100px 50px;
+    float: right;
+    /* height: 350px; */
+}
+.ul_b li{
+    height: 50px;
+    line-height: 50px;
+}
+.ul_b li a{
+    padding: 0px 20px;
+    text-align: center;
+    display: block;
+    transition: all .5s linear;
+    color: #fff;
+}
+.ul_b a:hover{
+    border-radius: 30px;
+    background-color: #333;
+    color: #c4003a;
+}
+
+.jieshao{
+    display: inline-block;
+    color: #fff;
+}
+.jieshao a{
+    margin-top: 120px;
+    display: block;
+    width: 150px;
+    height: 70px;
+    background: url(../img/log.png);
+    background-size: 100%;
+}
+.jieshao p{
+    margin: 20px 0px;
 }
