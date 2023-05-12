@@ -108,12 +108,20 @@ ul{
     height: 400px;
     width: 40%;
     position:absolute;
-    transform: translate(30%,-150%);
+    transform: translate(35%,-120%);
     background: rgba(0, 0,0,0.3);
+    border-radius: 20px;
 }
 .jianjie p{
+    color: #fff;
+}
+.jianjie p:nth-child(1){
     font-weight: 900;
     font-size: 60px;
+}
+.jianjie p:nth-child(2){
+    font-weight: 700;
+    font-size: 30px;
 }
 .Bottom_A{
     min-height: 100px;
