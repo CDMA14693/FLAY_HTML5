@@ -59,15 +59,16 @@ ul{
     
 }
 .tiao{
-    height: 200px;
-    width: 700px;
+    height: 180px;
+    min-width: 560px;
+    width: 60%;
     position:absolute;
     left: 50%;
     transform: translate(-50%,-50%);
-    border-radius:20px;
+    border-radius:30px;
     z-index: 0;
-    background-color:#121111; 
-    opacity:0.9;
+    background-color:#fff; 
+    /* opacity:0.8; */
 }
 .tiao{
     display: flex;
@@ -81,7 +82,24 @@ ul{
     height: 100px;
 }
 .xiao{
-    color:#fff;
+    color:black;
+}
+.xiang{
+    width: 100%;
+    height: 500px;
+    /* min-width:; */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 90px;
+}
+.xiang a{
+    color: #000;
+}
+.xiang a:hover{
+    color: #8a2be2;
 }
 .Bottom_A{
     min-height: 100px;
