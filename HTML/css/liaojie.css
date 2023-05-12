@@ -50,13 +50,14 @@ ul{
     text-align: center;
     overflow: hidden;
     background: #18181a;
-        
+    position: relative;    
+    height: 800px;
 }
 .banner{
-    height: 801px;
-    min-width: 100%;
+    min-height: 800px;
+    left: 0%;
     object-fit: fill;
-    
+    position: absolute;
 }
 .tiao{
     height: 180px;
