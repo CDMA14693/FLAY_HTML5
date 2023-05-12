@@ -47,21 +47,21 @@ ul{
     height: 100%;
 }
 .middle{
-    /* text-align: center; */
+    text-align: center;
     overflow: hidden;
-    /* background: #18181a; */
-        
+    background: #18181a;
+    position: relative;    
+    height: 800px;
 }
 .banner{
-    /* height: 801px; */
-    /* width: 100%; */
-    height: 601px;
-    min-width: 100%;
+    min-height: 800px;
+    left: 0%;
     object-fit: fill;
+    position: absolute;
 }
 .tiao{
     height: 180px;
-    min-width: 590px;
+    min-width: 560px;
     width: 60%;
     position:absolute;
     left: 50%;
