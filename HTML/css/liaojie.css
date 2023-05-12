@@ -84,6 +84,23 @@ ul{
 .xiao{
     color:black;
 }
+.xiang{
+    width: 100%;
+    height: 500px;
+    /* min-width:; */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 90px;
+}
+.xiang a{
+    color: #000;
+}
+.xiang a:hover{
+    color: #8a2be2;
+}
 .Bottom_A{
     min-height: 100px;
     background-color: #000;
