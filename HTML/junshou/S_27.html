@@ -18,8 +18,12 @@
     <div class="conter_A">
         <div class="show_baner">
             <div><img src="../img/fj/su-27_1.jpg" alt=""></div>
+            <div><img src="../img/fj/01.jpg" alt=""></div>
+            <div><img src="../img/fj/02.jpg" alt=""></div>
             <div><img src="../img/fj/su-27_1.jpg" alt=""></div>
         </div>
+        <p>shangy</p>
+        <p></p>
         <i>
             <span>
                 <p>SU-27</p>
@@ -162,18 +166,56 @@
     <script>
         var cont_A_ban = document.querySelectorAll(".conter_A")
         var show_baner = document.querySelectorAll(".show_baner")
+        var up_p=document.querySelectorAll(".conter_A>p:first-of-type")
+        //console.log(up_p[0].parentElement)
         for (var i = 0; i < cont_A_ban.length; i++) {
             cont_A_ban[i].firstElementChild.style.width = cont_A_ban[i].firstElementChild.children.length + "00%"
-            console.log(cont_A_ban[i].firstElementChild.children.length)
+            cont_A_ban[i].firstElementChild.style.left="0%"
+            //console.log(cont_A_ban[i].firstElementChild.children.length)
         }
         // cont_A_ban[0].firstElementChild.style=cont_A_ban[0].firstElementChild.style+"transition: all .5s;"
         // console.log(cont_A_ban[0].firstElementChild.style);
+        
         cont_A_ban[0].firstElementChild.style.transition="all .5s"
-        function time_lunbo(){
-            setTimeout(1000)
+        
+        for(var i=0;i<up_p.length;i++){
+            up_p[i].onclick=function(){
+                up_img(this.parentElement);
+                console.log(132)
+                this.parentElement.firstElementChild.style.transition="all .5s";
+                //this.firstElementChild.style.left='-'+2+"00%";
+            }
+            
+            //console.log(up_p);
         }
-        function next_img(){}
-        function up_img(){}
+        
+        
+        
+        
+        function next_img(object){
+            //console.log(object.firstElementChild.style)
+        }
+        function up_img(object){
+            var i=(object.firstElementChild.style.width)[0];
+            var select_i;
+            if((object.firstElementChild.style.left)[0]=='-'){
+                cont_A_ban[0].firstElementChild.style.transition="all .5s"
+                select_i=(object.firstElementChild.style.left)[1];
+            }
+            else
+            {
+                select_i=((object.firstElementChild.style.left)[0])
+            }
+            
+            
+            console.log(i)
+            if(select_i==0){
+                object.firstElementChild.style.transition="";
+                object.firstElementChild.style.left='-'+(i-1)+"00%";
+                
+            }
+            return (i-2);
+        }
     </script>
 </body>
 

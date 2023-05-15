@@ -160,6 +160,22 @@ td>p{
     width: 100%;
 }
 
+/*  */
+.conter_A>p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 40px;
+    height: 100px;
+    background-color: #fff;
+}
+.conter_A>p:first-of-type{
+    left: 0px;
+}
+.conter_A>p:last-of-type{
+    right: 0px;
+}
 /* 对图片的标签进行特殊设置 */
 #i_2{
     width: 400px;
@@ -167,4 +183,15 @@ td>p{
 /*  */
 .show{
     height: 100%;
+}
+
+
+.i1{
+    left: 0%;
+}
+.i2{
+    left: 100%;
+}
+.i3{
+    left: 200%;
 }
