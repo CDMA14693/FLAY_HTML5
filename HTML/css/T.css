@@ -16,6 +16,17 @@ a{
     color: #fff;
     
 }
+@font-face {
+    font-family: 'iconfont';
+    src: url('../ttf/iconfont.ttf?=1684169463116') format('truetype');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 /* 关于顶部样式 */
 .top_A{
     width: 100%;
