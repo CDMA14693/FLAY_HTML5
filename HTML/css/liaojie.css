@@ -55,6 +55,7 @@ ul{
 }
 .banner{
     min-height: 800px;
+    min-width: 100%;
     left: 0%;
     object-fit: fill;
     position: absolute;
