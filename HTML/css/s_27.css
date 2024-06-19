@@ -1,0 +1,210 @@
+.conter_A{
+    overflow: hidden;
+    height: 800px;
+    position: relative;
+}
+.conter_A>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    /* transition: all .5s; */
+    left: 0%;
+    border-bottom: 10px solid #18181a;
+    display: flex;
+}
+.conter_A>div>div{
+    height: 100%;
+    flex: 1;
+    overflow: hidden
+}
+.conter_A>div>div>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conter_A>i{
+    font-style: normal;
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 243px;
+    right: 15%;
+    top: 50%;
+}
+.conter_A:nth-of-type(2n+1)>i{
+    right: 15%;
+}
+.conter_A:nth-of-type(2n)>i
+{
+    left: 15%;
+}
+.conter_A span{
+    display: block;
+    width: 100%;
+    height:0px;
+    overflow: hidden;
+    background-color: #00000050;
+    transition: all 1s;
+}
+.conter_A span>p{
+    white-space: nowrap;
+    
+    margin: 5px 0px;
+    letter-spacing: 2px;
+    color: #f2f2f4;
+}
+
+.conter_A span>p:nth-of-type(2n+1){
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.conter_A span>p:nth-of-type(2n){
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 19px;
+}
+.conter_A span>p:nth-of-type(1){
+    text-align: right;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.conter_A:hover span{
+    height: 100%;
+    padding: 40px;
+}
+
+/*  */
+.vide_div{
+    overflow: hidden;
+    height: 800px;
+    position: relative;
+    margin: 20px 0px;
+}
+.vide_div p:first-of-type{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #f2f2f4;
+}
+.vide_div p:last-of-type{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #f2f2f4;
+}
+.Banner_video {
+    height: 100%;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(.7);
+    z-index: -1;
+    object-fit: contain;
+}
+
+.xxcs{
+    min-height: 300px;
+    width: 1000px;
+    margin: 50px auto;
+}
+.xxcs>p:first-child{
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f2f2f4;
+}
+.table_d{
+    display: flex;
+    box-shadow: 0px -.5px 0px #333;
+    /* border-top: 1px solid #f2f2f4; */
+}
+.table_d>p{
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #f2f2f4;
+    flex:3;
+}
+.table_d div{
+    padding: 20px;
+    flex: 7;
+}
+
+
+/* 废弃的表格 */
+.xxcs table{
+    width: 100%;
+}
+.xxcs tr{
+    display: flex;
+    text-align: center;
+    color: #f2f2f4;
+    margin-top: 20px;
+}
+.xxcs tr>td{
+    display: flex;
+    flex: 1;
+    /* line-height: 46px; */
+    /* border: 1px solid #f2f2f4; */
+}
+td>p{
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 20px;
+    align-self:center;
+    width: 100%;
+}
+td>i{
+    font-style: normal;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+}
+/*  */
+.conter_A>p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 50px;
+    height:100px;
+    font-size: 4em;
+    line-height: 100px;
+    color: #f2f2f4;
+    text-align: center;
+    background-color: #33333333;
+}
+.conter_A>p:first-of-type{
+    left: 0px;
+}
+.conter_A>p:last-of-type{
+    right: 0px;
+}
+/* 对图片的标签进行特殊设置 */
+#i_2{
+    width: 400px;
+}
+/*  */
+.show{
+    height: 100%;
+}
+
+
+.i1{
+    left: 0%;
+}
+.i2{
+    left: 100%;
+}
+.i3{
+    left: 200%;
+}

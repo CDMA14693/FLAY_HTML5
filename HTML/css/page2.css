@@ -1,0 +1,139 @@
+.conter_A{
+    overflow: hidden;
+    height: 800px;
+    position: relative;
+}
+.conter_A>div{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    transition: all .5s;
+    left: 0%;
+    border-bottom:10px solid #18181a;
+    display: flex;
+}
+.conter_A>div>div{
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+.conter_A>div>div>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conter_A>i{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 243px;
+    right: 15%;
+    top: 50%;
+}
+.conter_A i>span{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    background-color: #00000050;
+    transition: all 1s;
+}
+.conter_A span:last-child{
+    right: 0px;
+    bottom: 0px;
+}
+.conter_A span>p{
+    white-space: nowrap;
+    color: #f2f2f4;
+}
+.conter_A span>p:nth-of-type(1){
+    text-align: right;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.conter_A span>p:nth-of-type(2){
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.conter_A span>p:nth-of-type(3){
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 19px;
+}
+.conter_A a{
+    margin-top: 20px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+.conter_A ul{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.conter_A ul>li{
+    width: 80px;
+    height: 10px;
+    background-color: #d9e2ec;
+    margin: 10px;
+    border-radius: 40px;
+    transition: all .5s;
+}
+
+
+/* B */
+.conter_B{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.conter_B>div{
+    overflow: hidden;
+    flex: 1;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.conter_B div:last-child{
+    
+    margin: 5% 0px;
+}
+.conter_B div img{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+.conter_B span{
+    display: block;
+    margin-top: 100px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #d9e2ec;
+    /* background-color: #333333; */
+}
+.conter_B p{
+    font-size: 16px;
+    color: #d9e2ec;
+}
+
+/* 属性与动画需要 */
+.conter_A .show{
+    width: 100%;
+    padding: 40px;
+    height: 243px;
+}
+#show_li{
+    background-color: #c4003a;
+}
+#ban1{
+    left: -100%;
+}

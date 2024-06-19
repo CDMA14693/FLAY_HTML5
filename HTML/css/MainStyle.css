@@ -1,24 +1,16 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    box-sizing: border-box;
-    user-select: none;
-}
 .conter_A,.top_A,.conter_C{
     background: #18181a;
-}
-ul{
-    list-style: none;
-    display: inline-block;
-}
-a{
-    color: #fff;
-    
 }
 .banner_cont,.banner_text{
     display: inline-block;
 }
+
+.gd *{
+    transition: all .5s;
+}
+
+
+
 .Banner_video{
     min-height: 100%;
     position: absolute;
@@ -39,79 +31,47 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-.top_A{
-    position: relative;
-}
-.top_A a{
-    display: inline-block;
-}
-.top_A img{
-    display: block;
-    height: 70px;
-    padding: 10px 0px 10px 20px;
-}
-.top_A>ul{
-    position: absolute;
-    right: 20px;
-    height: 70px;
-}
-.top_A>ul>li{
-    display: inline-block;
-    text-align: center;
-    height: 70px;
-}
-.top_A>ul>li>a{
-    display: block;
-    line-height: 70px;
-    padding: 0px 15px;
-}
-.top_A a:hover{
-    color: #c4003a;
-}
-.daosan::after{
-    margin-left: 5px;
-    transform: translateY(5px);
-    content: "";
-    display: inline-block;
-    border: 8px solid transparent;
-    border-top:8px solid rgb(224, 224, 224);
-}
+/* 顶部下拉列表 */
 .gd{
     position: relative;
+    display: block;
+    border-radius: 20px;
 }
 .gd div{
     position: absolute;
     width: 320px;
     right: 0px;
     display: none;
+    /* display: flex; */
     background-color: #333;
     z-index: 3;
-    border-radius: 25px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .gd ul{
-    padding: 5px 0px;
-    margin: 0px 10px;
+    flex: 1;
 }
 .gd li{
     height: 60px;
 }
 .gd a{
     padding: 0px 10px;
+    width: 100%;
     height: 100%;
     line-height:60px;
 }
 .gd a:hover{
-    border-radius: 25px;
+    /* border-radius: 25px; */
     background-color: #c4003a;
     color: #fff;
 }
 .gd:hover div{
     display: block;
+    display: flex;
 }
 
+/* 第一个主体页面 */
 .conter_A{
     /* background: #fff; */
     padding-top: 150px;
@@ -270,23 +230,8 @@ a{
     font-weight: 900;
 }
 
-.Bottom_A{
-    min-height: 100px;
-    background-color: #000;
-}
 
-
-.Bottom_A>div{
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 350px;
-    
-}
-.Bottom_A>div::after{
-    content: "";
-    display: block;
-}
-.ul_b{
+/* .ul_b{
     margin: 0px 50px;
     padding-top: 50px;
     float: right;
@@ -306,23 +251,9 @@ a{
     border-radius: 30px;
     background-color: #333;
     color: #c4003a;
-}
+} */
 
-.jieshao{
-    display: inline-block;
-    color: #fff;
-}
-.jieshao a{
-    margin-top: 100px;
-    display: block;
-    width: 150px;
-    height: 70px;
-    background: url(../img/log.png);
-    background-size: 100%;
-}
-.jieshao p{
-    margin: 20px 0px;
-}
+
 
 .flex_A{
     font-size: 0px;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/T.css">
+    <link rel="stylesheet" href="./css/page2.css">
+    <title>军售</title>
+</head>
+
+<body>
+    <div class="top_A">
+        <a href="./index.html"><img src="./img/log.png" alt=""></a>
+
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <!--  -->
+    <div class="conter_A">
+        <div class="show_baner">
+            <div><img src="./img/fj/su-27_2.jpg" alt=""></div>
+            <div><img src="./img/fj/Tupolev_Tu-160_RF-94109.jpg" alt=""></div>
+        </div>
+
+        <ul>
+            <li id="show_li"></li>
+            <li></li>
+        </ul>
+
+        <i>
+            <span>
+                <p>SU-27</p>
+                <p>苏霍伊设计局研发</p>
+                <p>巴伦支海手术刀</p>
+                <a href="./junshou/S_27.html" class="iconfont">了解详情&#xe602;</a>
+            </span>
+            <span>
+                <p>TU-160</p>
+                <p>苏联图波列夫设计局</p>
+                <p>外交抗议一万次</p>
+                <p>不如它煽动翅膀一次</p>
+                <a href="./junshou/TU_160.html" class="iconfont" >了解详情&#xe602;</a>
+            </span>
+        </i>
+    </div>
+
+
+    <div class="conter_B">
+        <div>
+            <span>告别传统交易模式</span>
+            <p>由制造企业直接对友好国家军售</p>
+            <p>非友好国家也可申请中立国间接军售</p>
+            <span>拒绝购买劣质丐版机</span>
+            <p>装备可以讲价钱</p>
+            <p>但是不能买丐版</p>
+            <span>第三世界精锐国防力量</span>
+            <p>苏制武器的皮实耐操</p>
+            <p>新时代仪器强强联手</p>
+        </div>
+        <div>
+            <img src="./img/junshou_!.jpg" alt="">
+        </div>
+    </div>
+    <!--  -->
+    <div class="Bottom_A">
+        <div>
+            <div class="jieshao">
+                <a href=""></a>
+                <p>© 2016-2022 Parsec this->my.</p>
+                <p>社交平台</p>
+
+            </div>
+            <ul class="ul_b">
+                <li><a href="">国际代理</a></li>
+                <li><a href="">商业合作</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">+1 911-7661-66</a></li>
+            </ul>
+            <ul class="ul_b">
+                <li><a href="">广告赞助</a></li>
+                <li><a href="">品牌宣传</a></li>
+                <li><a href="">寻求工作</a></li>
+            </ul>
+            <ul class="ul_b">
+                <li><a href="./page2_junshou.html">现役战机出售</a></li>
+                <li><a href="">认证体系</a></li>
+                <li><a href="">免费试驾</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var span = document.querySelectorAll(".conter_A i>span")
+        var conter_A = document.querySelector(".conter_A")
+        var qiehuan_ban1 = document.querySelectorAll(".conter_A ul>li")
+        var banner = document.querySelectorAll(".show_baner")
+        show_(true, span[0])
+        console.log(qiehuan_ban1);
+        for (var i = 0; i < qiehuan_ban1.length; i++) {
+            console.log(qiehuan_ban1[i])
+            qiehuan_ban1[i].onclick = function (event) {
+                var tem = 0;
+                for (var i = 0; i < qiehuan_ban1.length; i++) {
+                    if (this == qiehuan_ban1[i]) { tem = i; }
+                    qiehuan_ban1[i].id = "";
+                }
+                this.id = "show_li"
+                switch (tem) {
+                    case 0:
+                        banner[0].id = ""
+                        show_(true, span[0])
+                        show_(false, span[1])
+                        break;
+                    case 1:
+                        banner[0].id = "ban1"
+                        show_(false, span[0])
+                        show_(true, span[1])
+                        break;
+                }
+            }
+        }
+
+        function show_(event, object) {
+            if (event == true) {
+                object.className = "show"
+            }
+            else {
+                object.className = ""
+            }
+
+        }
+    </script>
+</body>
+
+</html>
